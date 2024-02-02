@@ -2,9 +2,11 @@
 <img src="https://i.imgur.com/jFFlpQ9.png" alt="RawrSnips" width="700"/>
 </p>
 <p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=Iconical.rawrsnips" target="_blank" rel="noopener noreferrer"> 
   <img alt="Visual Studio Marketplace Rating" src="https://img.shields.io/visual-studio-marketplace/stars/iconical.rawrsnips?style=for-the-badge&color=%23E53958" />
   <img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/iconical.rawrsnips?include_prereleases&style=for-the-badge&color=%23E53958" />
   <img alt="Visual Studio Marketplace Downloads" src="https://img.shields.io/visual-studio-marketplace/d/iconical.rawrsnips?style=for-the-badge&color=%23E53958" />
+  </a>
 </p>
 
 # RawrSnips
@@ -12,7 +14,7 @@ Save time and energy by using **RawrSnips** extension for VS Code, the ultimate 
 
 ## Installation
 
-Just simply go to [RawrSnips on VS Marketplace](https://marketplace.visualstudio.com/items?itemName=Iconical.rawrsnips?style=for-the-badge) and follow their installation guide and you should be good to go.
+Just simply go to [RawrSnips on VS Marketplace](https://marketplace.visualstudio.com/items?itemName=Iconical.rawrsnips) and follow their installation guide and you should be good to go.
 
 ## Supported languages, frameworks and etc...
 * Discord.JS (.js)
