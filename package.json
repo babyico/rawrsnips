@@ -3,9 +3,9 @@
   "description": "Snippets system that enables you to write common code patterns in just a few keystrokes.",
   "version": "1.0.0",
   "displayName": "RawrSnips",
-  "publisher": "Babyico",
+  "publisher": "Iconical",
   "icon": "images/rawrsnips.png",
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "LICENSE.md",
   "repository": {
     "type": "git",
     "url": "https://github.com/babyico/rawrsnips"
@@ -23,5 +23,11 @@
         "path": "./snippets/snippets.json"
       }
     ]
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0"
+  },
+  "dependencies": {
+    "@vscode/vsce": "^2.23.0"
   }
 }
