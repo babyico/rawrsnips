@@ -2,9 +2,9 @@
 <img src="https://i.imgur.com/jFFlpQ9.png" alt="RawrSnips" width="700"/>
 </p>
 <p align="center">
-  <img alt="Visual Studio Marketplace Rating" src="https://img.shields.io/visual-studio-marketplace/stars/Iconical.rawrsnips?color=a60000" />
-  <img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/Iconical.rawrsnips" />
-  <img alt="Visual Studio Marketplace Downloads" src="https://img.shields.io/visual-studio-marketplace/d/Iconical.rawrsnips" />
+  <img alt="Visual Studio Marketplace Rating" src="https://img.shields.io/visual-studio-marketplace/stars/iconical.rawrsnips?style=for-the-badge&color=%23E53958" />
+  <img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/iconical.rawrsnips?include_prereleases&style=for-the-badge&color=%23E53958" />
+  <img alt="Visual Studio Marketplace Downloads" src="https://img.shields.io/visual-studio-marketplace/d/iconical.rawrsnips?style=for-the-badge&color=%23E53958" />
 </p>
 
 # RawrSnips
