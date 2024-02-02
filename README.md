@@ -1,13 +1,13 @@
 <p align="center">
 <img src="https://i.imgur.com/jFFlpQ9.png" alt="RawrSnips" width="700"/>
 </p>
+<p align="center">
+  <img alt="Visual Studio Marketplace Rating" src="https://img.shields.io/visual-studio-marketplace/stars/Iconical.rawrsnips?color=a60000" />
+  <img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/Iconical.rawrsnips" />
+  <img alt="Visual Studio Marketplace Downloads" src="https://img.shields.io/visual-studio-marketplace/d/Iconical.rawrsnips" />
+</p>
 
 # RawrSnips
-
-![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/stars/Iconical.rawrsnips?color=a60000)
-![Visual Studio Marketplace Version (including pre-releases)](https://img.shields.io/visual-studio-marketplace/v/Iconical.rawrsnips)
-![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/Iconical.rawrsnips)
-
 Save time and energy by using **RawrSnips** extension for VS Code, the ultimate tool for building amazing Discord.JS bots with ease and speed using **Snippets** system, you can write common code patterns in just a few keystrokes, making your work faster and efficient.
 
 ## Installation
