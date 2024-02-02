@@ -1,3 +1,6 @@
 .gitignore
 CHANGELOG.md
 node_modules
+.git
+package-lock.json
+*.vsix
