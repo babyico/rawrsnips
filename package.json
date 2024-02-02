@@ -3,12 +3,12 @@
   "description": "Snippets system that enables you to write common code patterns in just a few keystrokes.",
   "version": "1.0.0",
   "displayName": "RawrSnips",
-  "publisher": "Rawrberry",
+  "publisher": "Babyico",
   "icon": "images/rawrsnips.png",
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rawrberry/rawrsnips"
+    "url": "https://github.com/babyico/rawrsnips"
   },
   "engines": {
     "vscode": "0.10.x"
