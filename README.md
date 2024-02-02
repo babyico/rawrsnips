@@ -1,3 +1,7 @@
+<p align="center">
+<img src="https://i.imgur.com/jFFlpQ9.png" alt="RawrSnips" width="700"/>
+</p>
+
 # RawrSnips
 
 ![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/stars/Iconical.rawrsnips?color=a60000)
