@@ -1,10 +1,14 @@
 # RawrSnips
 
+![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/stars/Iconical.rawrsnips?color=a60000)
+![Visual Studio Marketplace Version (including pre-releases)](https://img.shields.io/visual-studio-marketplace/v/Iconical.rawrsnips)
+![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/Iconical.rawrsnips)
+
 Save time and energy by using **RawrSnips** extension for VS Code, the ultimate tool for building amazing Discord.JS bots with ease and speed using **Snippets** system, you can write common code patterns in just a few keystrokes, making your work faster and efficient.
 
 ## Installation
 
-Just simply go to [RawrSnips on VS Marketplace](https://marketplace.visualstudio.com/items?itemName=Iconical.rawrsnips) and follow their installation guide and you should be good to go.
+Just simply go to [RawrSnips on VS Marketplace](https://marketplace.visualstudio.com/items?itemName=Iconical.rawrsnips?style=for-the-badge) and follow their installation guide and you should be good to go.
 
 ## Supported languages, frameworks and etc...
 * Discord.JS (.js)
