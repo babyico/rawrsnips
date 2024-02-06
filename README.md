@@ -14,7 +14,7 @@ Save time and energy by using **RawrSnips** extension for VS Code, the ultimate 
 
 ## Installation
 
-Just simply go to [RawrSnips on VS Marketplace](https://marketplace.visualstudio.com/items?itemName=Iconical.rawrsnips?style=for-the-badge) and follow their installation guide and you should be good to go.
+Just simply go to [RawrSnips on VS Marketplace](https://marketplace.visualstudio.com/items?itemName=Iconical.rawrsnips) and follow their installation guide and you should be good to go.
 
 ## Supported languages, frameworks and etc...
 * Discord.JS (.js)
