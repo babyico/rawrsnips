@@ -24,6 +24,10 @@ Just simply go to [RawrSnips on VS Marketplace](https://marketplace.visualstudio
 * React (.tsx)
 * Html (.html)
 * Vue (.vue)
+* Changelog (.md)
+
+> [!NOTE]
+> for more information check the snippets examples below
 
 ## Snippets
 
