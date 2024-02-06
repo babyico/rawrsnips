@@ -2,9 +2,11 @@
 <img src="https://i.imgur.com/jFFlpQ9.png" alt="RawrSnips" width="700"/>
 </p>
 <p align="center">
-  <img alt="Visual Studio Marketplace Rating" src="https://img.shields.io/visual-studio-marketplace/stars/Iconical.rawrsnips?color=a60000" />
-  <img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/Iconical.rawrsnips" />
-  <img alt="Visual Studio Marketplace Downloads" src="https://img.shields.io/visual-studio-marketplace/d/Iconical.rawrsnips" />
+  <a href="https://marketplace.visualstudio.com/items?itemName=Iconical.rawrsnips" target="_blank" rel="noopener noreferrer"> 
+  <img alt="Visual Studio Marketplace Rating" src="https://img.shields.io/visual-studio-marketplace/stars/iconical.rawrsnips?style=for-the-badge&color=%23E53958" />
+  <img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/iconical.rawrsnips?include_prereleases&style=for-the-badge&color=%23E53958" />
+  <img alt="Visual Studio Marketplace Downloads" src="https://img.shields.io/visual-studio-marketplace/d/iconical.rawrsnips?style=for-the-badge&color=%23E53958" />
+  </a>
 </p>
 
 # RawrSnips
@@ -101,3 +103,17 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `clt→`   | console table `console.table` |
 | `cti→`   | console time `console.time` |
 | `cte→`   | console timeEnd `console.timeEnd` |
+
+### Changelog
+| Trigger  | Content |
+| -------: | ------- |  
+|`cl-init→`| Initiates a new changelog with the header, needed links and a place for your releases and tags.|
+|`cl-version→` |	Creates a standalone version tag. The version number and the date can be overwritten by using tabs. The current date is pasted by default.|
+|`cl-version-full→` |	Same as changelog-version but additionally pastes all entries: added, changed, deprecated, removed, fixed, security.|
+|`cl-entries→` |	Only pastes all entries without the version tag: added, changed, deprecated, removed, fixed, security.|
+|`cl-added→` | 	Creates an added entry.|
+|`cl-changed→` |	Creates a changed entry.|
+|`cl-deprecated→` |	Creates a deprecated entry.|
+|`cl-removed→` |	Creates a removed entry.|
+|`cl-fixed→` |	Creates a fixed entry.|
+|`cl-security→` |	Creates a security entry.|

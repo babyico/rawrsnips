@@ -1,243 +1,243 @@
 {
-  "import": {
+  "import ~ Rawr": {
     "prefix": "imp",
     "body": "import ${2:moduleName} from '${1:module}';$0",
     "description": "Imports entire module statement in ES6 syntax"
   },
-  "importNoModuleName": {
+  "importNoModuleName ~ Rawr": {
     "prefix": "imn",
     "body": "import '${1:module}';$0",
     "description": "Imports entire module in ES6 syntax without module name"
   },
-  "importDestructing": {
+  "importDestructing ~ Rawr": {
     "prefix": "imd",
     "body": "import { $2 } from '${1:module}';$0",
     "description": "Imports only a portion of the module in ES6 syntax"
   },
-  "importEverything": {
+  "importEverything ~ Rawr": {
     "prefix": "ime",
     "body": "import * as ${2:alias} from '${1:module}';$0",
     "description": "Imports everything as alias from the module in ES6 syntax"
   },
-  "importAs": {
+  "importAs ~ Rawr": {
     "prefix": "ima",
     "body": "import { ${2:originalName} as ${3:alias} } from '${1:module}';$0",
     "description": "Imports a specific portion of the module by assigning a local alias in ES6 syntax"
   },
-  "require": {
+  "require ~ Rawr": {
     "prefix": "rqr",
     "body": "require('${1:package}');",
     "description": "Require a package"
   },
-  "requireToConst": {
+  "requireToConst ~ Rawr": {
     "prefix": "req",
     "body": "const ${1:packageName} = require('${1:package}');$0",
     "description": "Require a package to const"
   },
-  "moduleExports": {
+  "moduleExports ~ Rawr": {
     "prefix": "mde",
     "body": "module.exports = {\n\t$0\n};\n",
     "description": "Module exports from Common JS, node syntax at ES6"
   },
-  "exportNamedVariable": {
+  "exportNamedVariable ~ Rawr": {
     "prefix": "env",
     "body": "export const ${1:exportVariable} = ${2:localVariable};\n",
     "description": "Export named variable in ES6 syntax"
   },
-  "exportNamedFunction": {
+  "exportNamedFunction ~ Rawr": {
     "prefix": "enf",
     "body": "export const ${1:functionName} = (${2:params}) => {\n\t$0\n};\n",
     "description": "Export named function in ES6 syntax"
   },
-  "exportDefaultFunction": {
+  "exportDefaultFunction ~ Rawr": {
     "prefix": "edf",
     "body": "export default function ${1:${TM_FILENAME_BASE}}(${2:params}) {\n\t$0\n};\n",
     "description": "Export default function in ES6 syntax"
   },
-  "exportClass": {
+  "exportClass ~ Rawr": {
     "prefix": "ecl",
     "body": "export default class ${1:className} {\n\t$0\n};\n",
     "description": "Export default class in ES6 syntax"
   },
-  "exportClassExtends": {
+  "exportClassExtends ~ Rawr": {
     "prefix": "ece",
     "body": "export default class ${1:className} extends ${2:baseclassName} {\n\t$0\n};\n",
     "description": "Export default class which extends a base one in ES6 syntax"
   },
 
-  "constructor": {
+  "constructor ~ Rawr": {
     "prefix": "con",
     "body": "constructor(${1:params}) {\n\t${0}\n}",
     "description": "Add default constructor in a class in ES6 syntax"
   },
-  "method": {
+  "method ~ Rawr": {
     "prefix": "met",
     "body": "${1:methodName}(${2:params}) {\n\t${0}\n}",
     "description": "Creates a method inside a class in ES6 syntax"
   },
-  "propertyGet": {
+  "propertyGet ~ Rawr": {
     "prefix": "pge",
     "body": "get ${1:propertyName}() {\n\treturn this.${0};\n}",
     "description": "Creates a getter property inside a class in ES6 syntax"
   },
-  "propertyset": {
+  "propertyset ~ Rawr": {
     "prefix": "pse",
     "body": "set ${1:propertyName}(${2:value}) {\n\t${0};\n}",
     "description": "Creates a setter property inside a class in ES6 syntax"
   },
 
-  "forEach": {
+  "forEach ~ Rawr": {
     "prefix": "fre",
     "body": "${1:array}.forEach(${2:currentItem} => {\n\t${0}\n});",
     "description": "Creates a forEach statement in ES6 syntax"
   },
-  "forOf": {
+  "forOf ~ Rawr": {
     "prefix": "fof",
     "body": "for (const ${1:item} of ${2:object}) {\n\t${0}\n}",
     "description": "Iterating over property names of iterable objects"
   },
-  "forIn": {
+  "forIn ~ Rawr": {
     "prefix": "fin",
     "body": "for (const ${1:item} in ${2:object}) {\n\t${0}\n}",
     "description": "Iterating over property values of iterable objects"
   },
-  "anonymousFunction": {
+  "anonymousFunction ~ Rawr": {
     "prefix": "anfn",
     "body": "(${1:params}) => {\n\t${2}\n}",
     "description": "Creates an anonymous function in ES6 syntax"
   },
-  "namedFunction": {
+  "namedFunction ~ Rawr": {
     "prefix": "nfn",
     "body": "const ${1:name} = (${2:params}) => {\n\t${3}\n}",
     "description": "Creates a named function in ES6 syntax"
   },
-  "destructingObject": {
+  "destructingObject ~ Rawr": {
     "prefix": "dob",
     "body": "const {${2:propertyName}} = ${1:objectToDestruct};",
     "description": "Creates and assigns a local variable using object destructing"
   },
-  "destructingArray": {
+  "destructingArray ~ Rawr": {
     "prefix": "dar",
     "body": "const [${2:propertyName}] = ${1:arrayToDestruct};",
     "description": "Creates and assigns a local variable using array destructing"
   },
-  "setInterval": {
+  "setInterval ~ Rawr": {
     "prefix": "sti",
     "body": "setInterval(() => {\n\t${2}\n}, ${0:intervalInms});",
     "description": "Executes the given function at specified intervals in ES6 syntax"
   },
-  "setTimeOut": {
+  "setTimeOut ~ Rawr": {
     "prefix": "sto",
     "body": "setTimeout(() => {\n\t${2}\n}, ${1:delayInms});",
     "description": "Executes the given function after the specified delay in ES6 syntax"
   },
-  "promise": {
+  "promise ~ Rawr": {
     "prefix": "prom",
     "body": "return new Promise((resolve, reject) => {\n\t${1}\n});",
     "description": "Creates and returns a new Promise in the standard ES6 syntax"
   },
-  "thenCatch": {
+  "thenCatch ~ Rawr": {
     "prefix": "thenc",
     "body": ".then((${1:result}) => {\n\t${2}\n}).catch((${3:err}) => {\n\t${4}\n});",
     "description": "Add the .then and .catch methods to handle promises"
   },
 
-  "consoleAssert": {
+  "consoleAssert ~ Rawr": {
     "prefix": "cas",
     "body": "console.assert(${1:expression}, ${2:object});",
     "description": "If the specified expression is false, the message is written to the console along with a stack trace"
   },
-  "consoleClear": {
+  "consoleClear ~ Rawr": {
     "prefix": "ccl",
     "body": "console.clear();",
     "description": "Clears the console"
   },
-  "consoleCount": {
+  "consoleCount ~ Rawr": {
     "prefix": "cco",
     "body": "console.count(${1:label});",
     "description": "Writes the the number of times that count() has been invoked at the same line and with the same label"
   },
-    "consoleDebug": {
+    "consoleDebug ~ Rawr": {
     "prefix": "cdb",
     "body": "console.debug(${1:object});",
     "description": "Displays a message in the console. Also display a blue right arrow icon along with the logged message in Safari"
   },
-  "consoleDir": {
+  "consoleDir ~ Rawr": {
     "prefix": "cdi",
     "body": "console.dir(${1:object});",
     "description": "Prints a JavaScript representation of the specified object"
   },
-  "consoleError": {
+  "consoleError ~ Rawr": {
     "prefix": "cer",
     "body": "console.error(${1:object});",
     "description": "Displays a message in the console and also includes a stack trace from where the method was called"
   },
-  "consoleGroup": {
+  "consoleGroup ~ Rawr": {
     "prefix": "cgr",
     "body": "console.group('${1:label}');",
     "description": "Groups and indents all following output by an additional level, until console.groupEnd() is called."
   },
-  "consoleGroupEnd": {
+  "consoleGroupEnd ~ Rawr": {
     "prefix": "cge",
     "body": "console.groupEnd();",
     "description": "Closes out the corresponding console.group()."
   },
-  "consoleLog": {
+  "consoleLog ~ Rawr": {
     "prefix": "clg",
     "body": "console.log(${1:object});",
     "description": "Displays a message in the console"
   },
-  "consoleLogObject": {
+  "consoleLogObject ~ Rawr": {
     "prefix": "clo",
     "body": "console.log('${1:object} :>> ', ${1:object});",
     "description": "Displays an object in the console with its name"
   },
-  "consoleTrace": {
+  "consoleTrace ~ Rawr": {
     "prefix": "ctr",
     "body": "console.trace(${1:object});",
     "description": "Prints a stack trace from the point where the method was called"
   },
-  "consoleWarn": {
+  "consoleWarn ~ Rawr": {
     "prefix": "cwa",
     "body": "console.warn(${1:object});",
     "description": "Displays a message in the console but also displays a yellow warning icon along with the logged message"
   },
-  "consoleInfo": {
+  "consoleInfo ~ Rawr": {
     "prefix": "cin",
     "body": "console.info(${1:object});",
     "description": "Displays a message in the console but also displays a blue information icon along with the logged message"
   },
-  "consoleTable": {
+  "consoleTable ~ Rawr": {
     "prefix": "clt",
     "body": "console.table(${1:object});",
     "description": "Displays tabular data as a table."
   },
-  "consoleTime": {
+  "consoleTime ~ Rawr": {
     "prefix": "cti",
     "body": "console.time(${1:object});",
     "description": "Sets starting point for execution time measurement"
   },
-  "consoleTimeEnd": {
+  "consoleTimeEnd ~ Rawr": {
     "prefix": "cte",
     "body": "console.timeEnd(${1:object});",
     "description": "Sets end point for execution time measurement"
   },
-  "constDiscord": {
+  "constDiscord ~ Rawr": {
     "prefix": ["req.discord","cdjs"],
     "body": "const { Client, Collection, GatewayIntentBits, Partials, Events } = require('discord.js');",
     "description": "Adds default consts from discord.js"
   },
-  "constClient": {
+  "constClient ~ Rawr": {
     "prefix": ["req.client","cclt"],
     "body": "const { Client } = require('discord.js');",
     "description": "Adds const Client from discord.js"
   },
-  "reqDiscord": {
+  "reqDiscord ~ Rawr": {
     "prefix": ["req.djs","cclt"],
     "body": "const { ${1:name} } = require('discord.js');",
     "description": "Adds const from discord.js"
   },
-  "djsEvent": {
+  "djsEvent ~ Rawr": {
     "prefix": ["djs.event","edjs", "eventdjs", "evdjs"],
     "body": [
       "module.exports = {",
@@ -250,7 +250,7 @@
     ],
     "description": "Creates a basic event for Discord bot using the discord.js"
   },
-  "djsSlashCmd": {
+  "djsSlashCmd ~ Rawr": {
     "prefix": ["djs.slash","sldjs", "slashdjs", "sladjs"],
     "body": [
       "const Discord = require('discord.js');",
@@ -276,12 +276,12 @@
     ],
     "description": "Creates a basic slash command for Discord bot using the discord.js"
   },
-  "messageSend": {
+  "messageSend ~ Rawr": {
     "prefix": ["djs.msg","msgdjs", "mchannel", "mdjs"],
     "body" : "${1:message}.channel.send(`${2:urmessage}`)",
     "description":"Sends a message to the channel where the command was called."
   },
-  "embedCreate": {
+  "embedCreate ~ Rawr": {
     "prefix": ["djs.embed","ecreate", "embedjs", "emdjs"],
     "body": [
       "const embed = new Discord.EmbedBuilder()",
@@ -296,7 +296,7 @@
     ],
     "description": "Creates an embed object with fields to add content"
   },
-  "embedCreatePlus": {
+  "embedCreatePlus ~ Rawr": {
     "prefix": ["djs.embed+","ecreate+", "embedjs+", "emdjs+", "embed+"],
     "body": [
       "const embed = new Discord.EmbedBuilder()",
@@ -317,7 +317,7 @@
     ],
     "description": "Creates an embed object with advanced fields to add content"
   },
-  "scratchDjs": {
+  "scratchDjs ~ Rawr": {
     "prefix": ["djs.scratch","scratchDjs", "basedjs"],
     "body": [
       "const Discord = require('discord.js');",
@@ -327,7 +327,7 @@
     "description": "Imports the discord.js library and creates a simple client instance."
   },
 
-  "channelCreate": {
+  "channelCreate ~ Rawr": {
 		"prefix": "djs.channelCreate",
 		"body": [       
             "${1:client}.on(Discord.Events.ChannelCreate, (channel) => {",
@@ -337,7 +337,7 @@
         "description": "Create a channelCreate."
     },
 
-    "channelDelete": {
+    "channelDelete ~ Rawr": {
 		"prefix": "djs.channelDelete",
 		"body": [       
             "${1:client}.on(Discord.Events.ChannelDelete, (channel) => {",
@@ -347,7 +347,7 @@
         "description": "Create a channelDelete."
     },
 
-    "channelPinsUpdate": {
+    "channelPinsUpdate ~ Rawr": {
 		"prefix": "djs.channelPinsUpdate",
 		"body": [       
             "${1:client}.on(Discord.Events.ChannelPinsUpdate, (channel, time) => {",
@@ -357,7 +357,7 @@
         "description": "Create a channelPinsUpdate."
     },
 
-    "channelUpdate": {
+    "channelUpdate ~ Rawr": {
 		"prefix": "djs.channelUpdate",
 		"body": [       
             "${1:client}.on(Discord.Events.ChannelUpdate, (oldChannel, newChannel) => {",
@@ -367,7 +367,7 @@
         "description": "Create a channelUpdate."
     },
 
-    "applicationCommandPermissionsUpdate": {
+    "applicationCommandPermissionsUpdate ~ Rawr": {
         "prefix": "djs.applicationCommandPermissionsUpdate",
         "body": [
             "${1:client}.on(Discord.Events.ApplicationCommandPermissionsUpdate, (request) => {",
@@ -377,7 +377,7 @@
         "description": "Create a applicationCommandPermissionsUpdate"
     },
 
-    "debug": {
+    "debug ~ Rawr": {
 		"prefix": "djs.debug",
 		"body": [       
             "${1:client}.on('Discord.Events.Debug, (info) => {",
@@ -387,7 +387,7 @@
         "description": "Create a debug."
     },
 
-    "emojiCreate": {
+    "emojiCreate ~ Rawr": {
 		"prefix": "djs.emojiCreate",
 		"body": [       
             "${1:client}.on(Discord.Events.GuildEmojiCreate', (emoji) => {",
@@ -397,7 +397,7 @@
         "description": "Create a emojiCreate."
     },
 
-    "emojiDelete": {
+    "emojiDelete ~ Rawr": {
 		"prefix": "djs.emojiDelete",
 		"body": [       
             "${1:client}.on(Discord.Events.GuildEmojiDelete, (emoji) => {",
@@ -407,7 +407,7 @@
         "description": "Create a emojiDelete."
     },
 
-    "emojiUpdate": {
+    "emojiUpdate ~ Rawr": {
 		"prefix": "djs.emojiUpdate",
 		"body": [       
             "${1:client}.on(Discord.Events.GuildEmojiUpdate, (oldEmoji, newEmoji) => {",
@@ -417,7 +417,7 @@
         "description": "Create a emojiUpdate."
     },
 
-    "error": {
+    "error ~ Rawr": {
 		"prefix": "djs.error",
 		"body": [       
             "${1:client}.on(Discord.Events.Error, (error) => {",
@@ -427,7 +427,7 @@
         "description": "Create a error."
     },
 
-    "guildBanAdd": {
+    "guildBanAdd ~ Rawr": {
 		"prefix": "djs.guildBanAdd",
 		"body": [       
             "${1:client}.on(Discord.Events.GuildBanAdd, (guild, user) => {",
@@ -437,7 +437,7 @@
         "description": "Create a guildBanAdd."
     },
 
-    "guildBanRemove": {
+    "guildBanRemove ~ Rawr": {
 		"prefix": "djs.guildBanRemove",
 		"body": [       
             "${1:client}.on(Discord.Events.GuildBanRemove, (guild, user) => {",
@@ -447,7 +447,7 @@
         "description": "Create a guildBanRemove."
     },
 
-    "guildCreate": {
+    "guildCreate ~ Rawr": {
 		"prefix": "djs.guildCreate",
 		"body": [       
             "${1:client}.on(Discord.Events.GuildCreate, (guild) => {",
@@ -457,7 +457,7 @@
         "description": "Create a guildCreate."
     },
 
-    "guildDelete": {
+    "guildDelete ~ Rawr": {
 		"prefix": "djs.guildDelete",
 		"body": [       
             "${1:client}.on(Discord.Events.GuildDelete', (guild) => {",
@@ -467,7 +467,7 @@
         "description": "Create a guildDelete."
     },
 
-    "guildIntegrationsUpdate": {
+    "guildIntegrationsUpdate ~ Rawr": {
 		"prefix": "djs.guildIntegrationsUpdate",
 		"body": [       
             "${1:client}.on(Discord.Events.GuildIntegrationsUpdate, (guild) => {",
@@ -477,7 +477,7 @@
         "description": "Create a guildIntegrationsUpdate."
     },
 
-    "guildMemberAdd": {
+    "guildMemberAdd ~ Rawr": {
 		"prefix": "djs.guildMemberAdd",
 		"body": [       
             "${1:client}.on(Discord.Events.GuildMemberAdd, (member) => {",
@@ -487,7 +487,7 @@
         "description": "Create a guildMemberAdd."
     },
 
-    "guildMemberRemove": {
+    "guildMemberRemove ~ Rawr": {
 		"prefix": "djs.guildMemberRemove",
 		"body": [       
             "${1:client}.on(Discord.Events.GuildMemberRemove, (member) => {",
@@ -497,7 +497,7 @@
         "description": "Create a guildMemberRemove."
     },
 
-    "guildMemberAvailable": {
+    "guildMemberAvailable ~ Rawr": {
 		"prefix": "djs.guildMemberAvailable",
 		"body": [       
             "${1:client}.on(Discord.Events.GuildMemberAvailable, (member) => {",
@@ -507,7 +507,7 @@
         "description": "Create a guildMemberAvailable."
     },
 
-    "guildMemberUpdate": {
+    "guildMemberUpdate ~ Rawr": {
 		"prefix": "djs.guildMemberUpdate",
 		"body": [       
             "${1:client}.on(Discord.Events.GuildMemberUpdate, (oldMember, newMember) => {",
@@ -517,7 +517,7 @@
         "description": "Create a guildMemberUpdate."
     },
 
-    "guildMembersChunk": {
+    "guildMembersChunk ~ Rawr": {
 		"prefix": "djs.guildMembersChunk",
 		"body": [       
             "${1:client}.on(Discord.Events.GuildMembersChunk, (members, guild) => {",
@@ -527,7 +527,7 @@
         "description": "Create a guildMembersChunk."
     },
 
-    "guildUnavailable": {
+    "guildUnavailable ~ Rawr": {
 		"prefix": "djs.guildUnavailable",
 		"body": [       
             "${1:client}.on(Discord.Events.GuildUnavailable, (guild) => {",
@@ -537,7 +537,7 @@
         "description": "Create a guildUnavailable."
     },
 
-    "guildUpdate": {
+    "guildUpdate ~ Rawr": {
 		"prefix": "djs.guildUpdate",
 		"body": [       
             "${1:client}.on(Discord.Events.GuildUpdate, (oldGuild, newGuild) => {",
@@ -547,7 +547,7 @@
         "description": "Create a guildUpdate."
     },
 
-    "messageDelete": {
+    "messageDelete ~ Rawr": {
 		"prefix": "djs.messageDelete",
 		"body": [       
             "${1:client}.on(Discord.Events.MessageDelete, (message) => {",
@@ -557,7 +557,7 @@
         "description": "Create a messageDelete."
     },
 
-    "messageDeleteBulk": {
+    "messageDeleteBulk ~ Rawr": {
 		"prefix": "djs.messageDeleteBulk",
 		"body": [       
             "${1:client}.on(Discord.Events.MessageDeleteBulk, (messages) => {",
@@ -567,7 +567,7 @@
         "description": "Create a messageDeleteBulk."
     },
 
-    "messageReactionAdd": {
+    "messageReactionAdd ~ Rawr": {
 		"prefix": "djs.messageReactionAdd",
 		"body": [       
             "${1:client}.on(Discord.Events.MessageReactionAdd, (messageReaction, user) => {",
@@ -577,7 +577,7 @@
         "description": "Create a messageReactionAdd."
     },
 
-    "messageReactionRemove": {
+    "messageReactionRemove ~ Rawr": {
 		"prefix": "djs.messageReactionRemove",
 		"body": [       
             "${1:client}.on(Discord.Events.MessageReactionRemove, (messageReaction, user) => {",
@@ -587,7 +587,7 @@
         "description": "Create a messageReactionRemove."
     },
 
-    "messageUpdate": {
+    "messageUpdate ~ Rawr": {
 		"prefix": "djs.messageUpdate",
 		"body": [       
             "${1:client}.on(Discord.Events.MessageUpdate, (oldMessage, newMessage) => {",
@@ -597,7 +597,7 @@
         "description": "Create a messageUpdate."
     },
 
-    "presenceUpdate": {
+    "presenceUpdate ~ Rawr": {
 		"prefix": "djs.presenceUpdate",
 		"body": [       
             "${1:client}.on(Discord.Events.PresenceUpdate, (oldMember, newMember) => {",
@@ -607,7 +607,7 @@
         "description": "Create a presenceUpdate."
     },
 
-    "rateLimit": {
+    "rateLimit ~ Rawr": {
 		"prefix": "djs.rateLimit",
 		"body": [       
             "${1:client}.on('rateLimit', (rateLimitInfo, rateLimitInfo.limit, rateLimitInfo.timeDifference, rateLimitInfo.path, rateLimitInfo.method) => {",
@@ -617,7 +617,7 @@
         "description": "Create a rateLimit."
     },
 
-    "ready": {
+    "ready ~ Rawr": {
 		"prefix": "djs.ready",
 		"body": [       
             "${1:client}.on(Discord.Events.ClientReady, (client) => {",
@@ -627,7 +627,7 @@
         "description": "Create a ready."
     },
 
-    "reconnecting": {
+    "reconnecting ~ Rawr": {
 		"prefix": "djs.reconnecting",
 		"body": [       
             "${1:client}.on(Discord.Events.ShardReconnecting, (id) => {",
@@ -637,7 +637,7 @@
         "description": "Create a default Discord bot's shard reconnecting."
     },
 
-    "resume": {
+    "resume ~ Rawr": {
 		"prefix": "djs.resume",
 		"body": [       
             "${1:client}.on(Discord.Events.shardResume, (id, replayedEvents) => {",
@@ -647,7 +647,7 @@
         "description": "Create a resume."
     },
 
-    "roleCreate": {
+    "roleCreate ~ Rawr": {
 		"prefix": "djs.roleCreate",
 		"body": [       
             "${1:client}.on(Discord.Events.RoleCreate, (role) => {",
@@ -657,7 +657,7 @@
         "description": "Create a roleCreate."
     },
 
-    "roleDelete": {
+    "roleDelete ~ Rawr": {
 		"prefix": "djs.roleDelete",
 		"body": [       
             "${1:client}.on(Discord.Events.RoleDelete, (role) => {",
@@ -667,7 +667,7 @@
         "description": "Create a roleDelete."
     },
 
-    "roleUpdate": {
+    "roleUpdate ~ Rawr": {
 		"prefix": "djs.roleUpdate",
 		"body": [       
             "${1:client}.on(Discord.Events.RoleUpdate, (oldRole, newRole) => {",
@@ -677,7 +677,7 @@
         "description": "Create a roleUpdate."
     },
 
-    "typingStart": {
+    "typingStart ~ Rawr": {
 		"prefix": "djs.typingStart",
 		"body": [       
             "${1:client}.on(Discord.Events.TypingStart, (channel, user) => {",
@@ -687,7 +687,7 @@
         "description": "Create a typingStart."
     },
 
-    "userUpdate": {
+    "userUpdate ~ Rawr": {
 		"prefix": "djs.userUpdate",
 		"body": [       
             "${1:client}.on(Discord.Events.UserUpdate, (oldUser, newUser) => {",
@@ -697,7 +697,7 @@
         "description": "Create a userUpdate."
     },
 
-    "voiceStateUpdate": {
+    "voiceStateUpdate ~ Rawr": {
 		"prefix": "djs.voiceStateUpdate",
 		"body": [       
             "${1:client}.on(Discord.Events.VoiceStateUpdate, (oldMember, newMember) => {",
@@ -707,7 +707,7 @@
         "description": "Create a voiceStateUpdate."
     },
 
-    "warn": {
+    "warn ~ Rawr": {
 		"prefix": "djs.warn",
 		"body": [       
             "${1:client}.on(Discord.Events.Warn, (info) => {",
@@ -717,7 +717,7 @@
         "description": "Create a warn."
     },
 
-    "webhookUpdate": {
+    "webhookUpdate ~ Rawr": {
 		"prefix": "djs.webhooksUpdate",
 		"body": [       
             "${1:client}.on(Discord.Events.WebhooksUpdate, (channel) => {",
@@ -727,7 +727,7 @@
         "description": "Create a webhookUpdate."
     },
 
-    "AutoModerationActionExecution": {
+    "AutoModerationActionExecution ~ Rawr": {
         "prefix": "djs.autoModerationActionExecution",
         "body": [
             "${1:client}.on(Discord.Events.AutoModerationActionExecution, (data) => {",
@@ -735,5 +735,133 @@
             "});"
         ],
         "description": "Create a AutoModerationActionExecution."
+    },
+    "Changelog init (full) ~ Rawr": {
+      "description": "Full Changelog sample",
+      "prefix": ["cl-full","changelog-init-full", "clinitfull"],
+      "body": [
+        "# Changelog 📝",
+        "${1:",
+        "## [Unreleased]",
+        "",
+        "### Changed",
+        "",
+        "- ${2:TODO}}",
+        "",
+        "## [${3:Version}] - $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+        "${4:",
+        "### Added",
+        "",
+        "- ${5:Add item}}",
+        "${6:",
+        "### Changed",
+        "",
+        "- ${7:Change item}}",
+        "${8:",
+        "### Fixed",
+        "",
+        "- ${9:Fixed item}}",
+        "${10:",
+        "### Removed",
+        "",
+        "- ${11:Remove item}}",
+        "${12:",
+        "### Security",
+        "",
+        "- ${13:Security item}}"
+      ]
+    },
+    "Changelog init (simple) ~ Rawr": {
+      "description": "Simple Changelog sample",
+      "prefix": ["cl-init","changelog-init", "clinit"],
+      "body": [
+        "# Changelog 📝",
+        "",
+        "## [${1:Version}] - $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+        "${2:",
+        "### Added",
+        "",
+        "- ${3:Add item}}",
+        "${4:",
+        "### Changed",
+        "",
+        "- ${5:Change item}}",
+        "${6:",
+        "### Fixed",
+        "",
+        "- ${7:Fixed item}}",
+        "${8:",
+        "### Removed",
+        "",
+        "- ${9:Remove item}}"
+      ]
+    },
+    "Change log init New Version (No fields) ~ Rawr": {
+      "description": "Log a new empty version",
+      "prefix": ["cl-version","clversion"],
+      "body": [
+        "",
+      "## [${1:Version}] - $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+      "${2:",
+      ""
+     ]
+    },
+    "Change log init New Version ~ Rawr": {
+      "description": "Log a new version",
+      "prefix": ["cl-version-full","changelog-new-version", "clnew"],
+      "body": [
+        "",
+        "## [${1:Version}] - $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+        "${2:",
+        "### Added",
+        "",
+        "- ${3:Add item}}",
+        "${4:",
+        "### Changed",
+        "",
+        "- ${5:Change item}}",
+        "${6:",
+        "### Fixed",
+        "",
+        "- ${7:Fixed item}}",
+        "${8:",
+        "### Removed",
+        "",
+        "- ${9:Remove item}}",
+        "${10:",
+        "### Security",
+        "",
+        "- ${11:Security item}}"
+      ]
+    },
+    "Change log added ~ Rawr": {
+      "description": "add [added] field for a version changelog",
+      "prefix": ["cl-added","changelog-added"],
+      "body": ["", "### Added", "", "- ${0:Add item}"]
+    },
+    "Change log changed ~ Rawr": {
+      "description": "add [changed] field for a version changelog",
+      "prefix": ["cl-changed","changelog-changed"],
+      "body": ["", "### Changed", "", "- ${0:Change item}"]
+    },
+    "Change log fixed ~ Rawr": {
+      "description": "add [fixed] field for a version changelog",
+      "prefix": ["cl-fixed","changelog-fixed"],
+      "body": ["", "### Fixed", "", "- ${0:Fixed item}"]
+    },
+    "Change log removed ~ Rawr": {
+      "description": "add [removed] field for a version changelog",
+      "prefix": ["cl-removed","changelog-removed"],
+      "body": ["", "### Removed", "", "- ${0:Removed item}"]
+    },
+    "Change log security ~ Rawr": {
+      "description": "add [security] field for a version changelog",
+      "prefix": ["cl-security","changelog-security"],
+      "body": ["", "### Security", "", "- ${0:Security item}"]
+    },
+    "Change log deprecated ~ Rawr": {
+      "description": "add [deprecated] field for a version changelog",
+      "prefix": ["cl-deprecated","changelog-deprecated"],
+      "body": ["", "### Deprecated", "", "- ${0:Deprecated item}"]
     }
 }
