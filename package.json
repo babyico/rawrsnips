@@ -19,15 +19,15 @@
   "contributes": {
     "snippets": [
       {
-        "language": "discord.js",
-        "path": "./snippets/snippets.json"
-      },
-      {
         "language": "javascript",
         "path": "./snippets/snippets.json"
       },
       {
         "language": "typescript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "markdown",
         "path": "./snippets/snippets.json"
       }
     ]
