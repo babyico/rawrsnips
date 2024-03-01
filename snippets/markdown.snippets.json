@@ -1,0 +1,130 @@
+{
+  "Changelog init (full) ~ Rawr": {
+    "description": "Full Changelog sample",
+    "prefix": ["cl-full","changelog-init-full", "clinitfull"],
+    "body": [
+      "# Changelog 📝",
+      "${1:",
+      "## [Unreleased]",
+      "",
+      "### Changed",
+      "",
+      "- ${2:TODO}}",
+      "",
+      "## [${3:Version}] - $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+      "${4:",
+      "### Added",
+      "",
+      "- ${5:Add item}}",
+      "${6:",
+      "### Changed",
+      "",
+      "- ${7:Change item}}",
+      "${8:",
+      "### Fixed",
+      "",
+      "- ${9:Fixed item}}",
+      "${10:",
+      "### Removed",
+      "",
+      "- ${11:Remove item}}",
+      "${12:",
+      "### Security",
+      "",
+      "- ${13:Security item}}"
+    ]
+  },
+  "Changelog init (simple) ~ Rawr": {
+    "description": "Simple Changelog sample",
+    "prefix": ["cl-init","changelog-init", "clinit"],
+    "body": [
+      "# Changelog 📝",
+      "",
+      "## [${1:Version}] - $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+      "${2:",
+      "### Added",
+      "",
+      "- ${3:Add item}}",
+      "${4:",
+      "### Changed",
+      "",
+      "- ${5:Change item}}",
+      "${6:",
+      "### Fixed",
+      "",
+      "- ${7:Fixed item}}",
+      "${8:",
+      "### Removed",
+      "",
+      "- ${9:Remove item}}"
+    ]
+  },
+  "Change log init New Version (No fields) ~ Rawr": {
+    "description": "Log a new empty version",
+    "prefix": ["cl-version","clversion"],
+    "body": [
+      "",
+    "## [${1:Version}] - $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+    "${2:",
+    ""
+   ]
+  },
+  "Change log init New Version ~ Rawr": {
+    "description": "Log a new version",
+    "prefix": ["cl-version-full","changelog-new-version", "clnew"],
+    "body": [
+      "",
+      "## [${1:Version}] - $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+      "${2:",
+      "### Added",
+      "",
+      "- ${3:Add item}}",
+      "${4:",
+      "### Changed",
+      "",
+      "- ${5:Change item}}",
+      "${6:",
+      "### Fixed",
+      "",
+      "- ${7:Fixed item}}",
+      "${8:",
+      "### Removed",
+      "",
+      "- ${9:Remove item}}",
+      "${10:",
+      "### Security",
+      "",
+      "- ${11:Security item}}"
+    ]
+  },
+  "Change log added ~ Rawr": {
+    "description": "add [added] field for a version changelog",
+    "prefix": ["cl-added","changelog-added"],
+    "body": ["", "### Added", "", "- ${0:Add item}"]
+  },
+  "Change log changed ~ Rawr": {
+    "description": "add [changed] field for a version changelog",
+    "prefix": ["cl-changed","changelog-changed"],
+    "body": ["", "### Changed", "", "- ${0:Change item}"]
+  },
+  "Change log fixed ~ Rawr": {
+    "description": "add [fixed] field for a version changelog",
+    "prefix": ["cl-fixed","changelog-fixed"],
+    "body": ["", "### Fixed", "", "- ${0:Fixed item}"]
+  },
+  "Change log removed ~ Rawr": {
+    "description": "add [removed] field for a version changelog",
+    "prefix": ["cl-removed","changelog-removed"],
+    "body": ["", "### Removed", "", "- ${0:Removed item}"]
+  },
+  "Change log security ~ Rawr": {
+    "description": "add [security] field for a version changelog",
+    "prefix": ["cl-security","changelog-security"],
+    "body": ["", "### Security", "", "- ${0:Security item}"]
+  },
+  "Change log deprecated ~ Rawr": {
+    "description": "add [deprecated] field for a version changelog",
+    "prefix": ["cl-deprecated","changelog-deprecated"],
+    "body": ["", "### Deprecated", "", "- ${0:Deprecated item}"]
+  }
+}

@@ -4,14 +4,37 @@
   "version": "1.0.3",
   "displayName": "RawrSnips",
   "publisher": "Iconical",
+  "author": {
+    "name": "Laith"
+  },
   "icon": "images/rawrsnips.png",
-  "license": "LICENSE.md",
+  "galleryBanner": { 
+        "color": "#0a0a0a", 
+        "theme": "dark" 
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/babyico/rawrsnips"
   },
+  "bugs": {
+    "url": "https://github.com/babyico/rawrsnips/issues"
+  },
+  "keywords": [
+    "vscode",
+    "vscode extension",
+    "javascript",
+    "typescript",
+    "snippets",
+    "markdown snippets",
+    "discord snippets",
+    "javascript snippets"
+  ],
+  "sponsor": {
+    "url": "https://patreon.com/babyiconical"
+  },
+  "license": "LICENSE.md",
   "engines": {
-    "vscode": "0.10.x"
+    "vscode": "^0.10.x"
   },
   "categories": [
     "Snippets"
@@ -20,22 +43,33 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets/snippets.json"
+        "path": "./snippets/js-ts.snippets.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/discord.snippets.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/snippets.json"
+        "path": "./snippets/js-ts.snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/discord.snippets.json"
       },
       {
         "language": "markdown",
-        "path": "./snippets/snippets.json"
+        "path": "./snippets/markdown.snippets.json"
+      },
+      {
+        "language": "cpp",
+        "path": "./snippets/cpp.snippets.json"
       }
     ]
   },
   "devDependencies": {
-    "esbuild": "^0.20.0"
-  },
-  "dependencies": {
+    "auto-changelog": "^2.4.0",
+    "esbuild": "^0.20.0",
     "@vscode/vsce": "^2.23.0"
   }
 }
