@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0]
+
+* Changelog snippets.
+* CPP snippets.
+
+*adjusted files and folders.
+
 ## [1.0.1]
 
 * Soft-Updated to add more features and snippets.
