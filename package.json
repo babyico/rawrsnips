@@ -1,16 +1,16 @@
 {
   "name": "rawrsnips",
   "description": "Snippets system that enables you to write common code patterns in just a few keystrokes.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "displayName": "RawrSnips",
   "publisher": "Iconical",
   "author": {
     "name": "Laith"
   },
   "icon": "images/rawrsnips.png",
-  "galleryBanner": { 
-        "color": "#0a0a0a", 
-        "theme": "dark" 
+  "galleryBanner": {
+    "color": "#0a0a0a",
+    "theme": "dark"
   },
   "repository": {
     "type": "git",
