@@ -1,6 +1,6 @@
 {
   "Changelog init (full) ~ Rawr": {
-    "description": "Full Changelog sample",
+    "description": "Full Changelog sample ~ Rawr",
     "prefix": ["cl-full","changelog-init-full", "clinitfull"],
     "body": [
       "# Changelog 📝",
@@ -35,7 +35,7 @@
     ]
   },
   "Changelog init (simple) ~ Rawr": {
-    "description": "Simple Changelog sample",
+    "description": "Simple Changelog sample ~ Rawr",
     "prefix": ["cl-init","changelog-init", "clinit"],
     "body": [
       "# Changelog 📝",
@@ -60,7 +60,7 @@
     ]
   },
   "Change log init New Version (No fields) ~ Rawr": {
-    "description": "Log a new empty version",
+    "description": "Log a new empty version ~ Rawr",
     "prefix": ["cl-version","clversion"],
     "body": [
       "",
@@ -70,7 +70,7 @@
    ]
   },
   "Change log init New Version ~ Rawr": {
-    "description": "Log a new version",
+    "description": "Log a new version ~ Rawr",
     "prefix": ["cl-version-full","changelog-new-version", "clnew"],
     "body": [
       "",
@@ -98,32 +98,32 @@
     ]
   },
   "Change log added ~ Rawr": {
-    "description": "add [added] field for a version changelog",
+    "description": "add [added] field for a version changelog ~ Rawr",
     "prefix": ["cl-added","changelog-added"],
     "body": ["", "### Added", "", "- ${0:Add item}"]
   },
   "Change log changed ~ Rawr": {
-    "description": "add [changed] field for a version changelog",
+    "description": "add [changed] field for a version changelog ~ Rawr",
     "prefix": ["cl-changed","changelog-changed"],
     "body": ["", "### Changed", "", "- ${0:Change item}"]
   },
   "Change log fixed ~ Rawr": {
-    "description": "add [fixed] field for a version changelog",
+    "description": "add [fixed] field for a version changelog ~ Rawr",
     "prefix": ["cl-fixed","changelog-fixed"],
     "body": ["", "### Fixed", "", "- ${0:Fixed item}"]
   },
   "Change log removed ~ Rawr": {
-    "description": "add [removed] field for a version changelog",
+    "description": "add [removed] field for a version changelog ~ Rawr",
     "prefix": ["cl-removed","changelog-removed"],
     "body": ["", "### Removed", "", "- ${0:Removed item}"]
   },
   "Change log security ~ Rawr": {
-    "description": "add [security] field for a version changelog",
+    "description": "add [security] field for a version changelog ~ Rawr",
     "prefix": ["cl-security","changelog-security"],
     "body": ["", "### Security", "", "- ${0:Security item}"]
   },
   "Change log deprecated ~ Rawr": {
-    "description": "add [deprecated] field for a version changelog",
+    "description": "add [deprecated] field for a version changelog ~ Rawr",
     "prefix": ["cl-deprecated","changelog-deprecated"],
     "body": ["", "### Deprecated", "", "- ${0:Deprecated item}"]
   }

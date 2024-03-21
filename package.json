@@ -64,6 +64,10 @@
       {
         "language": "cpp",
         "path": "./snippets/cpp.snippets.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/html.snippets.json"
       }
     ]
   },

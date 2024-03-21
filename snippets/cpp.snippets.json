@@ -7,7 +7,7 @@
 			" $3",
 			"}"
 		],
-		"description": "Code snippet for 'for' loop"
+		"description": "Code snippet for 'for' loop ~ Rawr"
 	},
 	"forr ~ Rawr": {
 		"prefix": "forr",
@@ -17,7 +17,7 @@
 			" $3",
 			"}"
 		],
-		"description": "Code snippet for reverse 'for' loop"
+		"description": "Code snippet for reverse 'for' loop ~ Rawr"
 	},
 	"do ~ Rawr": {
 		"prefix": "do",
@@ -27,7 +27,7 @@
 			" $1",
 			"} while($2);"
 		],
-		"description": "Code snippet for do...while loop"
+		"description": "Code snippet for do...while loop ~ Rawr"
 	},
 	"while ~ Rawr": {
 		"prefix": "while",
@@ -37,7 +37,7 @@
 			" $2",
 			"}"
 		],
-		"description": "Code snippet for while loop"
+		"description": "Code snippet for while loop ~ Rawr"
 	},
 	"foreach ~ Rawr": {
 		"prefix": "foreach",
@@ -47,7 +47,7 @@
 			" $1",
 			"}"
 		],
-		"description": "Code snippet for range-based for loop (c++11) statement"
+		"description": "Code snippet for range-based for loop (c++11) statement ~ Rawr"
 	},
 	"if ~ Rawr": {
 		"prefix": "if",
@@ -57,7 +57,7 @@
 			" $2",
 			"}"
 		],
-		"description": "Code snippet for if statement"
+		"description": "Code snippet for if statement ~ Rawr"
 	},
 	"else ~ Rawr": {
 		"prefix": "else",
@@ -67,7 +67,7 @@
 			" $1",
 			"}"
 		],
-		"description": "Code snippet for else statement"
+		"description": "Code snippet for else statement ~ Rawr"
 	},
 	"else if ~ Rawr": {
 		"prefix": "else if",
@@ -77,7 +77,7 @@
 			" $2",
 			"}"
 		],
-		"description": "Code snippet for else-if statement"
+		"description": "Code snippet for else-if statement ~ Rawr"
 	},
 	"enum ~ Rawr": {
 		"prefix": "enum",
@@ -87,14 +87,14 @@
 			" $1",
 			"};"
 		],
-		"description": "Code snippet for enum"
+		"description": "Code snippet for enum ~ Rawr"
 	},
 	"enum class ~ Rawr": {
 		"prefix": "enum class",
 		"body": [
 			"enum class ${MyClass} { };"
 		],
-		"description": "Code snippet for enum class (c++11)"
+		"description": "Code snippet for enum class (c++11) ~ Rawr"
 	},
 	"class ~ Rawr": {
 		"prefix": "class",
@@ -121,7 +121,7 @@
 			"{",
 			"}"
 		],
-		"description": "Code snippet for class"
+		"description": "Code snippet for class ~ Rawr"
 	},
 	"classi ~ Rawr": {
 		"prefix": "classi",
@@ -140,7 +140,7 @@
 			" $1",
 			"};"
 		],
-		"description": "Code snippet for class with inline constructor/destructor"
+		"description": "Code snippet for class with inline constructor/destructor ~ Rawr"
 	},
 	"interface ~ Rawr": {
 		"prefix": "interface",
@@ -150,7 +150,7 @@
 			" $1",
 			"};"
 		],
-		"description": "Code snippet for interface (Visual C++)"
+		"description": "Code snippet for interface (Visual C++) ~ Rawr"
 	},
 	"namespace ~ Rawr": {
 		"prefix": "namespace",
@@ -160,7 +160,7 @@
 			" $1",
 			"}"
 		],
-		"description": "Code snippet for namespace"
+		"description": "Code snippet for namespace ~ Rawr"
 	},
 	"#ifdef ~ Rawr": {
 		"prefix": "#ifdef",
@@ -169,7 +169,7 @@
 			"$1",
 			"#endif // ${DEBUG}"
 		],
-		"description": "Code snippet for #ifdef"
+		"description": "Code snippet for #ifdef ~ Rawr"
 	},
 	"#ifndef ~ Rawr": {
 		"prefix": "#ifndef",
@@ -178,7 +178,7 @@
 			"$2",
 			"#endif // !$1"
 		],
-		"description": "Code snippet for #ifndef"
+		"description": "Code snippet for #ifndef ~ Rawr"
 	},
 	"#if ~ Rawr": {
 		"prefix": "#if",
@@ -187,7 +187,7 @@
 			"$2",
 			"#endif // $1"
 		],
-		"description": "Code snippet for #if"
+		"description": "Code snippet for #if ~ Rawr"
 	},
 	"struct ~ Rawr": {
 		"prefix": "struct",
@@ -197,7 +197,7 @@
 			" $1",
 			"};"
 		],
-		"description": "Code snippet for struct"
+		"description": "Code snippet for struct ~ Rawr"
 	},
 	"switch ~ Rawr": {
 		"prefix": "switch",
@@ -208,7 +208,7 @@
 			"  break;$1",
 			"}"
 		],
-		"description": "Code snippet for switch statement"
+		"description": "Code snippet for switch statement ~ Rawr"
 	},
 	"try ~ Rawr": {
 		"prefix": "try",
@@ -222,7 +222,7 @@
 			" $1",
 			"}"
 		],
-		"description": "Code snippet for try catch"
+		"description": "Code snippet for try catch ~ Rawr"
 	},
 	"union ~ Rawr": {
 		"prefix": "union",
@@ -232,35 +232,35 @@
 			" $1",
 			"};"
 		],
-		"description": "Code snippet for union"
+		"description": "Code snippet for union ~ Rawr"
 	},
 	"cout ~ Rawr": {
 		"prefix": "cout",
 		"body": [
 			"std::cout << \"${1:/* message */}\" << std::endl;"
 		],
-		"description": "Code snippet for printing to std::cout, provided the header is set"
+		"description": "Code snippet for printing to std::cout, provided the header is set ~ Rawr"
 	},
 	"#inc ~ Rawr": {
 		"prefix": ["#inc", ",inc"],
 		"body": [
 			"#include \"$1\""
 		],
-		"description": "Code snippet for #include \" \""
+		"description": "Code snippet for #include \" \" ~ Rawr"
 	},
 	"#inc< ~ Rawr": {
 		"prefix": ["#inc<", ".inc"],
 		"body": [
 			"#include <$1>"
 		],
-		"description": "Code snippet for #include \" \""
+		"description": "Code snippet for #include \" \" ~ Rawr"
 	},
 	"#def ~ Rawr": {
 		"prefix": "#def",
 		"body": [
 			"#define \"$1\" \"$2\" "
 			],
-		"description": "Code snippet for #define \" \""
+		"description": "Code snippet for #define \" \" ~ Rawr"
 	},
 	"main ~ Rawr": {
 		"prefix": "main",
@@ -269,6 +269,6 @@
 			"    return 0;",
 			"}"
 		],
-		"description": "Code snippet for main function"
+		"description": "Code snippet for main function ~ Rawr"
 	}
 }

@@ -2,17 +2,17 @@
   "constDiscord ~ Rawr": {
     "prefix": ["req.discord","cdjs"],
     "body": "const { Client, Collection, GatewayIntentBits, Partials, Events } = require('discord.js');",
-    "description": "Adds default consts from discord.js"
+    "description": "Adds default consts from discord.js ~ Rawr"
   },
   "constClient ~ Rawr": {
     "prefix": ["req.client","cclt"],
     "body": "const { Client } = require('discord.js');",
-    "description": "Adds const Client from discord.js"
+    "description": "Adds const Client from discord.js ~ Rawr"
   },
   "reqDiscord ~ Rawr": {
     "prefix": ["req.djs","cclt"],
     "body": "const { ${1:name} } = require('discord.js');",
-    "description": "Adds const from discord.js"
+    "description": "Adds const from discord.js ~ Rawr"
   },
   "djsEvent ~ Rawr": {
     "prefix": ["djs.event","edjs", "eventdjs", "evdjs"],
@@ -25,7 +25,7 @@
             "    },",
             "};"
     ],
-    "description": "Creates a basic event for Discord bot using the discord.js"
+    "description": "Creates a basic event for Discord bot using the discord.js ~ Rawr"
   },
   "djsSlashCmd ~ Rawr": {
     "prefix": ["djs.slash","sldjs", "slashdjs", "sladjs"],
@@ -51,12 +51,12 @@
             "    },",
             "};"
     ],
-    "description": "Creates a basic slash command for Discord bot using the discord.js"
+    "description": "Creates a basic slash command for Discord bot using the discord.js ~ Rawr"
   },
   "messageSend ~ Rawr": {
     "prefix": ["djs.msg","msgdjs", "mchannel", "mdjs"],
     "body" : "${1:message}.channel.send(`${2:urmessage}`)",
-    "description":"Sends a message to the channel where the command was called."
+    "description":"Sends a message to the channel where the command was called. ~ Rawr"
   },
   "embedCreate ~ Rawr": {
     "prefix": ["djs.embed","ecreate", "embedjs", "emdjs"],
@@ -71,7 +71,7 @@
             "",
             "\tchannel.send(embed);"
     ],
-    "description": "Creates an embed object with fields to add content"
+    "description": "Creates an embed object with fields to add content ~ Rawr"
   },
   "embedCreatePlus ~ Rawr": {
     "prefix": ["djs.embed+","ecreate+", "embedjs+", "emdjs+", "embed+"],
@@ -92,7 +92,7 @@
             "",
             "\tchannel.send({ embeds: [embed] });"
     ],
-    "description": "Creates an embed object with advanced fields to add content"
+    "description": "Creates an embed object with advanced fields to add content ~ Rawr"
   },
   "scratchDjs ~ Rawr": {
     "prefix": ["djs.scratch","scratchDjs", "basedjs"],
@@ -101,7 +101,7 @@
       "const Client = new Discord.Client({ /* options */ });",
       "Client.login('TOKEN');"
     ],
-    "description": "Imports the discord.js library and creates a simple client instance."
+    "description": "Imports the discord.js library and creates a simple client instance. ~ Rawr"
   },
 
   "channelCreate ~ Rawr": {
@@ -111,7 +111,7 @@
             "\t${2:console.log(channel);}",
             "});"
 		],
-        "description": "Create a channelCreate."
+        "description": "Create a channelCreate. ~ Rawr"
     },
 
     "channelDelete ~ Rawr": {
@@ -121,7 +121,7 @@
             "\t${2:console.log(channel);}",
             "});"
 		],
-        "description": "Create a channelDelete."
+        "description": "Create a channelDelete. ~ Rawr"
     },
 
     "channelPinsUpdate ~ Rawr": {
@@ -131,7 +131,7 @@
             "\t${2:console.log(channel, time);}",
             "});"
 		],
-        "description": "Create a channelPinsUpdate."
+        "description": "Create a channelPinsUpdate. ~ Rawr"
     },
 
     "channelUpdate ~ Rawr": {
@@ -141,7 +141,7 @@
             "\t${2:console.log(oldChannel, newChannel);}",
             "});"
 		],
-        "description": "Create a channelUpdate."
+        "description": "Create a channelUpdate. ~ Rawr"
     },
 
     "applicationCommandPermissionsUpdate ~ Rawr": {
@@ -151,7 +151,7 @@
             "\t${2:console.log(request)}",
             "});"
         ],
-        "description": "Create a applicationCommandPermissionsUpdate"
+        "description": "Create a applicationCommandPermissionsUpdate ~ Rawr"
     },
 
     "debug ~ Rawr": {
@@ -161,7 +161,7 @@
             "\t${2:console.log(info);}",
             "});"
 		],
-        "description": "Create a debug."
+        "description": "Create a debug. ~ Rawr"
     },
 
     "emojiCreate ~ Rawr": {
@@ -171,7 +171,7 @@
             "\t${2:console.log(emoji);}",
             "});"
 		],
-        "description": "Create a emojiCreate."
+        "description": "Create a emojiCreate. ~ Rawr"
     },
 
     "emojiDelete ~ Rawr": {
@@ -181,7 +181,7 @@
             "\t${2:console.log(emoji);}",
             "});"
 		],
-        "description": "Create a emojiDelete."
+        "description": "Create a emojiDelete. ~ Rawr"
     },
 
     "emojiUpdate ~ Rawr": {
@@ -191,7 +191,7 @@
             "\t${2:console.log(oldEmoji, newEmoji);}",
             "});"
 		],
-        "description": "Create a emojiUpdate."
+        "description": "Create a emojiUpdate. ~ Rawr"
     },
 
     "error ~ Rawr": {
@@ -201,7 +201,7 @@
             "\t${2:console.log(error);}",
             "});"
 		],
-        "description": "Create a error."
+        "description": "Create a error. ~ Rawr"
     },
 
     "guildBanAdd ~ Rawr": {
@@ -211,7 +211,7 @@
             "\t${2:console.log(guild, user);}",
             "});"
 		],
-        "description": "Create a guildBanAdd."
+        "description": "Create a guildBanAdd. ~ Rawr"
     },
 
     "guildBanRemove ~ Rawr": {
@@ -221,7 +221,7 @@
             "\t${2:console.log(guild, user);}",
             "});"
 		],
-        "description": "Create a guildBanRemove."
+        "description": "Create a guildBanRemove. ~ Rawr"
     },
 
     "guildCreate ~ Rawr": {
@@ -231,7 +231,7 @@
             "\t${2:console.log(guild);}",
             "});"
 		],
-        "description": "Create a guildCreate."
+        "description": "Create a guildCreate. ~ Rawr"
     },
 
     "guildDelete ~ Rawr": {
@@ -241,7 +241,7 @@
             "\t${2:console.log(guild);}",
             "});"
 		],
-        "description": "Create a guildDelete."
+        "description": "Create a guildDelete. ~ Rawr"
     },
 
     "guildIntegrationsUpdate ~ Rawr": {
@@ -251,7 +251,7 @@
             "\t${2:console.log(guild);}",
             "});"
 		],
-        "description": "Create a guildIntegrationsUpdate."
+        "description": "Create a guildIntegrationsUpdate. ~ Rawr"
     },
 
     "guildMemberAdd ~ Rawr": {
@@ -261,7 +261,7 @@
             "\t${2:console.log(member);}",
             "});"
 		],
-        "description": "Create a guildMemberAdd."
+        "description": "Create a guildMemberAdd. ~ Rawr"
     },
 
     "guildMemberRemove ~ Rawr": {
@@ -271,7 +271,7 @@
             "\t${2:console.log(member);}",
             "});"
 		],
-        "description": "Create a guildMemberRemove."
+        "description": "Create a guildMemberRemove. ~ Rawr"
     },
 
     "guildMemberAvailable ~ Rawr": {
@@ -281,7 +281,7 @@
             "\t${2:console.log(member);}",
             "});"
 		],
-        "description": "Create a guildMemberAvailable."
+        "description": "Create a guildMemberAvailable. ~ Rawr"
     },
 
     "guildMemberUpdate ~ Rawr": {
@@ -291,7 +291,7 @@
             "\t${2:console.log(oldMember, newMember);}",
             "});"
 		],
-        "description": "Create a guildMemberUpdate."
+        "description": "Create a guildMemberUpdate. ~ Rawr"
     },
 
     "guildMembersChunk ~ Rawr": {
@@ -301,7 +301,7 @@
             "\t${2:console.log(members, guild);}",
             "});"
 		],
-        "description": "Create a guildMembersChunk."
+        "description": "Create a guildMembersChunk. ~ Rawr"
     },
 
     "guildUnavailable ~ Rawr": {
@@ -311,7 +311,7 @@
             "\t${2:console.log(guild);}",
             "});"
 		],
-        "description": "Create a guildUnavailable."
+        "description": "Create a guildUnavailable. ~ Rawr"
     },
 
     "guildUpdate ~ Rawr": {
@@ -321,7 +321,7 @@
             "\t${2:console.log(oldGuild, newGuild);}",
             "});"
 		],
-        "description": "Create a guildUpdate."
+        "description": "Create a guildUpdate. ~ Rawr"
     },
 
     "messageDelete ~ Rawr": {
@@ -331,7 +331,7 @@
             "\t${2:console.log(message);}",
             "});"
 		],
-        "description": "Create a messageDelete."
+        "description": "Create a messageDelete. ~ Rawr"
     },
 
     "messageDeleteBulk ~ Rawr": {
@@ -341,7 +341,7 @@
             "\t${2:console.log(messages);}",
             "});"
 		],
-        "description": "Create a messageDeleteBulk."
+        "description": "Create a messageDeleteBulk. ~ Rawr"
     },
 
     "messageReactionAdd ~ Rawr": {
@@ -351,7 +351,7 @@
             "\t${2:console.log(messageReaction, user);}",
             "});"
 		],
-        "description": "Create a messageReactionAdd."
+        "description": "Create a messageReactionAdd. ~ Rawr"
     },
 
     "messageReactionRemove ~ Rawr": {
@@ -361,7 +361,7 @@
             "\t${2:console.log(messageReaction, user);}",
             "});"
 		],
-        "description": "Create a messageReactionRemove."
+        "description": "Create a messageReactionRemove. ~ Rawr"
     },
 
     "messageUpdate ~ Rawr": {
@@ -371,7 +371,7 @@
             "\t${2:console.log(oldMessage, newMessage);}",
             "});"
 		],
-        "description": "Create a messageUpdate."
+        "description": "Create a messageUpdate. ~ Rawr"
     },
 
     "presenceUpdate ~ Rawr": {
@@ -381,7 +381,7 @@
             "\t${2:console.log(oldMember, newMember);}",
             "});"
 		],
-        "description": "Create a presenceUpdate."
+        "description": "Create a presenceUpdate. ~ Rawr"
     },
 
     "rateLimit ~ Rawr": {
@@ -391,7 +391,7 @@
             "\t${2:console.log(rateLimitInfo, rateLimitInfo.limit, rateLimitInfo.timeDifference, rateLimitInfo.path, rateLimitInfo.method);}",
             "});"
 		],
-        "description": "Create a rateLimit."
+        "description": "Create a rateLimit. ~ Rawr"
     },
 
     "ready ~ Rawr": {
@@ -401,7 +401,7 @@
             "\t${2:console.log(client.user.username);}",
             "});"
 		],
-        "description": "Create a ready."
+        "description": "Create a ready. ~ Rawr"
     },
 
     "reconnecting ~ Rawr": {
@@ -411,7 +411,7 @@
             "\t${2:console.log(id);}",
             "});"
 		],
-        "description": "Create a default Discord bot's shard reconnecting."
+        "description": "Create a default Discord bot's shard reconnecting. ~ Rawr"
     },
 
     "resume ~ Rawr": {
@@ -421,7 +421,7 @@
             "\t${2:console.log(id, replayedEvents);}",
             "});"
 		],
-        "description": "Create a resume."
+        "description": "Create a resume. ~ Rawr"
     },
 
     "roleCreate ~ Rawr": {
@@ -431,7 +431,7 @@
             "\t${2:console.log(role);}",
             "});"
 		],
-        "description": "Create a roleCreate."
+        "description": "Create a roleCreate. ~ Rawr"
     },
 
     "roleDelete ~ Rawr": {
@@ -441,7 +441,7 @@
             "\t${2:console.log(role);}",
             "});"
 		],
-        "description": "Create a roleDelete."
+        "description": "Create a roleDelete. ~ Rawr"
     },
 
     "roleUpdate ~ Rawr": {
@@ -451,7 +451,7 @@
             "\t${2:console.log(oldRole, newRole);}",
             "});"
 		],
-        "description": "Create a roleUpdate."
+        "description": "Create a roleUpdate. ~ Rawr"
     },
 
     "typingStart ~ Rawr": {
@@ -461,7 +461,7 @@
             "\t${2:console.log(channel, user);}",
             "});"
 		],
-        "description": "Create a typingStart."
+        "description": "Create a typingStart. ~ Rawr"
     },
 
     "userUpdate ~ Rawr": {
@@ -471,7 +471,7 @@
             "\t${2:console.log(oldUser, newUser);}",
             "});"
 		],
-        "description": "Create a userUpdate."
+        "description": "Create a userUpdate. ~ Rawr"
     },
 
     "voiceStateUpdate ~ Rawr": {
@@ -481,7 +481,7 @@
             "\t${2:console.log(oldMember, newMember);}",
             "});"
 		],
-        "description": "Create a voiceStateUpdate."
+        "description": "Create a voiceStateUpdate. ~ Rawr"
     },
 
     "warn ~ Rawr": {
@@ -491,7 +491,7 @@
             "\t${2:console.log(info);}",
             "});"
 		],
-        "description": "Create a warn."
+        "description": "Create a warn. ~ Rawr"
     },
 
     "webhookUpdate ~ Rawr": {
@@ -501,7 +501,7 @@
             "\t${2:console.log(channel);}",
             "});"
 		],
-        "description": "Create a webhookUpdate."
+        "description": "Create a webhookUpdate. ~ Rawr"
     },
 
     "AutoModerationActionExecution ~ Rawr": {
@@ -511,6 +511,6 @@
             "\t${2:console.log(data);}",
             "});"
         ],
-        "description": "Create a AutoModerationActionExecution."
+        "description": "Create a AutoModerationActionExecution. ~ Rawr"
     } 
 }
